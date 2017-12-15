@@ -1,0 +1,20 @@
+	
+	Assuming all stacks are the same size.
+	
+	stack A
+	stack B
+	stack C
+	
+	function reverseStackA()
+		while !A.isEmpty()
+			B.push(A.pop())
+		end while
+		
+		while !B.isEmpty()
+			C.push(B.pop())
+		end while
+		
+		while !C.isEmpty()
+			A.push(C.pop())
+		end while
+	end function
